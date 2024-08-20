@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <div id="registerForm" class="container">
+        <h2>Register</h2>
+        <input type="text" id="registerUsername" placeholder="Username" required><br><br>
+        <input type="password" id="registerPassword" placeholder="Password" required><br><br>
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a>.</p>
+    </div>
+
+    <div id="loginForm" class="container hidden">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username" required><br><br>
+        <input type="password" id="loginPassword" placeholder="Password" required><br><br>
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register here</a>.</p>
+    </div>
+
+    <div id="securedPage" class="container hidden">
+        <h2>Secured Page</h2>
+        <p>Welcome, <span id="username"></span>! You have successfully logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

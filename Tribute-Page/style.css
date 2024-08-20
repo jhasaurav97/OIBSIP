@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Times, serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    max-width: 98rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.heading{
+    padding: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.heading > .title{
+    margin-bottom: 0.5rem;
+}
+
+.heading > .description{
+    margin-bottom: 2rem;
+}
+
+.heading i{
+    font-size: 2rem;
+}
+
+.tribute{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 78rem;
+    margin: 8px auto;
+    background-color: white;
+    color: black;
+    align-items: center;
+    padding: 0 0 0 1rem;
+}
+
+.tribute blockquote{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.tribute img{
+    max-width: 100%;
+}
+
+.bio{
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    max-width: 48rem;
+}
+
+.bio > h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.bio > p{
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.bio > hr{
+    margin-top: 2rem;
+}
+
+footer{
+    text-align: center;
+    /* padding: 1rem; */
+}
